@@ -4,7 +4,7 @@ Setup redis on ubuntu.
 ```sudo apt update```
 ```sudo apt install redis-server```
 
-### there is one important configuration change to make in the Redis configuration file, which was generated automatically during the installation. Open this file with your preferred text editor:
+### There is one important configuration change to make in the Redis configuration file, which was generated automatically during the installation. Open this file with your preferred text editor:
 ```sudo vi /etc/redis/redis.conf```
 
 ### Inside the file, find the supervised directive. This directive allows you to declare an init system to manage Redis as a service, providing you with more control over its operation. The supervised directive is set to no by default. Since you are running Ubuntu, which uses the systemd init system, change this to systemd:
